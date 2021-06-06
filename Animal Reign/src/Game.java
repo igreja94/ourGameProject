@@ -1,11 +1,15 @@
+import Cards.Card;
+import Cards.CardsFactory;
+import Cards.Normal.NormalCard;
+import Player.Player;
+
 public class Game {
 
-    private int peoplePower = 50;
-    private boolean isDead;
-    private int animalsInfluence;
-    private int foodInfluence;
-    private int hunterInfluence;
-
+    private int animalsInfluence = 50;
+    private int foodInfluence = 50;
+    private int hunterInfluence = 50;
+    private Card[] deck;
+    private Player player;
 
     public int getAnimalsInfluence() {
         return animalsInfluence;
@@ -31,16 +35,17 @@ public class Game {
         this.hunterInfluence = hunterInfluence;
     }
 
+    public Card[] createDeck(int deckSize) {
+        deck = new Card[deckSize];
 
-    public NormalCard drawACard() {
-        int cardNumber = (int) (Math.random() * cardsFactory.getCardsInDeck().length);
-        return cardsFactory.getCardsInDeck()[cardNumber];
+        for (int i = 0; i < deck.length; i++) {
+            deck[i] = CardsFactory.generateCard();
+            System.out.println(deck[i].getName());
+        }
+        return deck;
     }
 
-    public void getSelectedCard() {
-        System.out.println(selectedNormalCard.getName());
-        System.out.println(selectedNormalCard.getMessage());
-    }
+
 
 
 }

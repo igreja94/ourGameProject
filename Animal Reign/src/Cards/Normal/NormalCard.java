@@ -1,25 +1,28 @@
-public class NormalCard extends Card implements NormalCards{
-    //PROPERTIES
+package Cards.Normal;
 
-    private String name;
-    private String message;
+import Cards.Card;
+import Cards.Normal.NormalBehaviour;
+
+public class NormalCard extends Card implements NormalBehaviour {
+    //PROPERTIES
+    protected String message;
+    protected String name;
 
 
     //METHODS
-    public NormalCard(String name, String message) {
+    public NormalCard(String name) {
         this.name = name;
-        this.message = message;
-       // this.cardInfluence = cardInfluence;
     };
 
     public String getMessage() {
         return message;
     }
 
+    @Override
     public String getName() {
         return name;
     }
-
+    //needs 3 Strings: message + 2 reactions
     @Override
     public void actionOne() {
 

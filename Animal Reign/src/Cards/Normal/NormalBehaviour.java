@@ -1,4 +1,6 @@
-public interface NormalCards {
+package Cards.Normal;
+
+public interface NormalBehaviour {
 
     public void actionOne();
     public void actionTwo();

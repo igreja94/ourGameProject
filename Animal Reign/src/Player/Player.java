@@ -1,15 +1,27 @@
+package Player;
+
 public class Player {
 
 
     //PROPERTIES
     private String name;
     private int age = 18;
-    private int maxAge = 60;
+    private final int maxAge = 60;
     private boolean isDead;
 
-
-
     //METHODS
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getMaxAge() {
+        return maxAge;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
