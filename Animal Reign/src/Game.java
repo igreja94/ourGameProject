@@ -11,27 +11,35 @@ public class Game {
         return animalsInfluence;
     }
 
+    public void setAnimalsInfluence(int animalsInfluence) {
+        this.animalsInfluence = animalsInfluence;
+    }
+
     public int getFoodInfluence() {
         return foodInfluence;
+    }
+
+    public void setFoodInfluence(int foodInfluence) {
+        this.foodInfluence = foodInfluence;
     }
 
     public int getHunterInfluence() {
         return hunterInfluence;
     }
 
-    CardsFactory cardsFactory = new CardsFactory();
+    public void setHunterInfluence(int hunterInfluence) {
+        this.hunterInfluence = hunterInfluence;
+    }
 
 
-    private Card selectedCard;
-
-    public Card drawACard() {
+    public NormalCard drawACard() {
         int cardNumber = (int) (Math.random() * cardsFactory.getCardsInDeck().length);
         return cardsFactory.getCardsInDeck()[cardNumber];
     }
 
     public void getSelectedCard() {
-        System.out.println(selectedCard.getName());
-        System.out.println(selectedCard.getMessage());
+        System.out.println(selectedNormalCard.getName());
+        System.out.println(selectedNormalCard.getMessage());
     }
 
 

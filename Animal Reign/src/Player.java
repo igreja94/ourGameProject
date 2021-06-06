@@ -7,6 +7,9 @@ public class Player {
     private int maxAge = 60;
     private boolean isDead;
 
+
+
+    //METHODS
     public void setName(String name) {
         this.name = name;
     }
@@ -15,15 +18,13 @@ public class Player {
         this.age = age;
     }
 
-     public boolean getIsDead() {
+    public boolean getIsDead() {
        return isDead;
      }
 
-
-
-
-    // METHODS
     public boolean killPlayer() {
         return isDead = true;
     }
+
+
 }
