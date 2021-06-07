@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Game game = new Game();
 
-        game.createDeck(30);
+        game.createDeck(60);
 
     }
 

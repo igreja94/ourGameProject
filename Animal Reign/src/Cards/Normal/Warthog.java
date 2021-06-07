@@ -1,10 +1,10 @@
 package Cards.Normal;
 
-public class Boar extends NormalCard {
+public class Warthog extends NormalCard {
 
 
-    public Boar() {
-        super("Boar");
+    public Warthog() {
+        super("Warthog");
     }
 
     @Override
@@ -16,7 +16,6 @@ public class Boar extends NormalCard {
     public void actionOne() {
         super.actionOne();
     }
-
     @Override
     public void actionTwo() {
         super.actionTwo();

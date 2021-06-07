@@ -1,6 +1,6 @@
 package Cards;
 
-import Cards.Normal.Boar;
+import Cards.Normal.Warthog;
 import Cards.Normal.Monkey;
 import Cards.Normal.Tiger;
 import Cards.Trap.TrapCard;
@@ -16,7 +16,7 @@ public class CardsFactory {
         }
 
         if (probability <= 36) {
-            return new Boar();
+            return new Warthog();
         }
 
         if (probability <= 68) {
