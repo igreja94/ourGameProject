@@ -7,4 +7,5 @@ public interface NormalBehaviour {
     public void actionThree();
     public void actionFour();
 
+
 }

@@ -9,7 +9,7 @@ public class CardsFactory {
     //generates a random Trap by invoking TrapCard.randomizeTrapCard
     //else creates NormalCards according to probability
     public static Card generateCard() {
-        int probability = (int) ((Math.random() *100) +1);
+      int probability = (int) ((Math.random() *100) +1);
 
         if (probability <= 4) {
             return TrapCard.randomizeTrapCard();
@@ -20,7 +20,7 @@ public class CardsFactory {
         }
 
         if (probability <= 68) {
-            new Tiger();
+            return new Tiger();
         }
 
         return new Monkey();
