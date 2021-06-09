@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6479b885-2023-40b7-88c2-293500241be6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Interfaces/TrapBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Giraffe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/NormalCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Rhino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Zebra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/BackgroundTwo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/CardsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/CardsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Bear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/CrockDealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/CrockDealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/Giraffe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Lion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Monkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/NormalBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Interfaces/NormalBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/NormalCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/Rhino.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/Warthog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Warthog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Normal/Zebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Trap/Paulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Trap/Paulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Trap/Pedro.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Trap/Pedro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Trap/Sara.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Trap/Sara.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Trap/TrapBehaviour.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Cards/Trap/TrapCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Trap/TrapCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Animal Reign/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Player.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tikrMoq6hfhSoW094f3CmPB1Uo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OurGame.Player.Main" />
+      <module name="ourGameProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6479b885-2023-40b7-88c2-293500241be6" name="Default Changelist" comment="" />
+      <created>1623259495544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623259495544</updated>
+      <workItem from="1623259498494" duration="49000" />
+      <workItem from="1623259554424" duration="202000" />
+      <workItem from="1623259821648" duration="9364000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Main.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
