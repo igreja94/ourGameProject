@@ -4,13 +4,8 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Tiger extends NormalCard {
 
-
     public Tiger() {
         super("Tiger");
-        animalPicture = new Picture(550, 85, "TIGER.jpg");
-        animalPicture.draw();
-        keyboardInit();
-
     }
 
     @Override
@@ -89,8 +84,13 @@ public class Tiger extends NormalCard {
     @Override
     public void cardSelected() {
         super.cardSelected();
+        animalPicture = new Picture(550, 85, "TIGER.jpg");
+        animalPicture.draw();
         animalString = new Picture();
+        animalString.draw();
         actionRandomizer();
+        keyboardInit();
+
     }
 
     @Override

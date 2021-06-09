@@ -72,7 +72,7 @@ public class NormalCard extends Card implements NormalBehaviour, KeyboardHandler
         switch (keyboardEvent.getKey()) {
 
             case KeyboardEvent.KEY_RIGHT: //YES
-                animalPicture.translate(30, 0);
+            animalPicture.translate(30, 0);
                 isYes = true;
                 //executeActionYes();
                 break;

@@ -1,8 +1,6 @@
 package Cards;
 
-import Cards.Normal.Warthog;
-import Cards.Normal.Monkey;
-import Cards.Normal.Tiger;
+import Cards.Normal.*;
 import Cards.Trap.TrapCard;
 
 public class CardsFactory {
@@ -15,12 +13,36 @@ public class CardsFactory {
             return TrapCard.randomizeTrapCard();
         }
 
-        if (probability <= 36) {
+        if (probability <= 10) {
             return new Warthog();
         }
 
-        if (probability <= 68) {
+        if (probability <= 21) {
             return new Tiger();
+        }
+
+        if (probability <= 32) {
+            return new Rhino();
+        }
+
+        if (probability <= 43) {
+            return new Lion();
+        }
+
+        if (probability <= 54) {
+            return new Bear();
+        }
+
+        if (probability <= 64) {
+            return new CrockDealer();
+        }
+
+        if (probability <= 74) {
+            return new Zebra();
+        }
+
+        if (probability <= 85) {
+            return new Giraffe();
         }
 
         return new Monkey();
