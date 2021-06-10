@@ -21,7 +21,7 @@ public class Monkey extends NormalCard {
     @Override
     public void actionOne() {
         super.actionOne();
-        Picture question = new Picture(50, 50, "MONKEY.jpg");
+        Picture question = new Picture(550, 275, "MONKEY M1.png");
         System.out.println("Entered action one! MONKEY");
         question.draw();
         while (!Game.inputReceived) {
@@ -39,7 +39,7 @@ public class Monkey extends NormalCard {
     @Override
     public void actionTwo() {
         super.actionTwo();
-        Picture question = new Picture(50, 50, "MONKEY.jpg");
+        Picture question = new Picture(550, 275, "MONKEY M2.png");
         System.out.println("Entered action one! MONKEY");
         question.draw();
         while (!Game.inputReceived) {
@@ -57,7 +57,7 @@ public class Monkey extends NormalCard {
     @Override
     public void actionThree() {
         super.actionThree();
-        Picture question = new Picture(50, 50, "MONKEY.jpg");
+        Picture question = new Picture(550, 275, "MONKEY M3.png");
         System.out.println("Entered action one! MONKEY");
         question.draw();
         while (!Game.inputReceived) {
@@ -75,7 +75,7 @@ public class Monkey extends NormalCard {
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(50, 50, "MONKEY.jpg");
+        Picture question = new Picture(550, 275, "MONKEY M4.png");
         System.out.println("Entered action one! MONKEY");
         question.draw();
         while (!Game.inputReceived) {
@@ -105,7 +105,7 @@ public class Monkey extends NormalCard {
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalPicture = new Picture(550, 85, "MONKEY.jpg");
+        animalPicture = new Picture(670, 50, "MONKEY.jpg");
         animalPicture.draw();
         animalString = new Picture();
         actionRandomizer();

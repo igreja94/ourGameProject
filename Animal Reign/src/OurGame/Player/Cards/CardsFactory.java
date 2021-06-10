@@ -9,7 +9,7 @@ public class CardsFactory {
     public static Card generateCard() {
       int probability = (int) ((Math.random() *100) +1);
 
-        if (probability <= 4) {
+        if (probability <= 6) {
             return TrapCard.randomizeTrapCard();
         }
 

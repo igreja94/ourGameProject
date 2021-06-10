@@ -18,7 +18,7 @@ public class Tiger extends NormalCard {
     @Override
     public void actionOne() {
         super.actionOne();
-        Picture question = new Picture(50, 50, "TIGER M1.jpg");
+        Picture question = new Picture(550 , 275, "TIGER M1.png");
         System.out.println("Entered action one! TIGER");
         question.draw();
         while (!Game.inputReceived) {
@@ -39,7 +39,7 @@ public class Tiger extends NormalCard {
     @Override
     public void actionTwo() {
         super.actionTwo();
-        Picture question = new Picture(50, 50, "TIGER M2.jpg");
+        Picture question = new Picture(550, 275, "TIGER M2.png");
         System.out.println("Entered action one! TIGER");
         question.draw();
         while (!Game.inputReceived) {
@@ -59,7 +59,7 @@ public class Tiger extends NormalCard {
     @Override
     public void actionThree() {
         super.actionThree();
-        Picture question = new Picture(50, 50, "TIGER M3.jpg");
+        Picture question = new Picture(550, 275, "TIGER M4.png");
         System.out.println("Entered action one! TIGER");
         question.draw();
         while (!Game.inputReceived) {
@@ -78,7 +78,7 @@ public class Tiger extends NormalCard {
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(50, 50, "TIGER M5.jpg");
+        Picture question = new Picture(550, 275, "TIGER M5.png");
         System.out.println("Entered action one! TIGER");
         question.draw();
         while (!Game.inputReceived) {
@@ -91,6 +91,7 @@ public class Tiger extends NormalCard {
         actionSelected(20);
         Game.inputReceived = false;
         question.delete();
+        animalPicture.delete();
         System.out.println("Action four executed");
     }
 
@@ -107,7 +108,7 @@ public class Tiger extends NormalCard {
 
     @Override
     public void cardSelected() {
-        animalPicture = new Picture(550, 85, "TIGER.jpg");
+        animalPicture = new Picture(670, 50, "TIGER.jpg");
         animalPicture.draw();
         actionRandomizer();
     }

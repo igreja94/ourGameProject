@@ -19,7 +19,7 @@ public class Warthog extends NormalCard {
     @Override
     public void actionOne() {
         super.actionOne();
-        Picture question = new Picture(50, 50, "WARTHOG.jpg");
+        Picture question = new Picture(550, 275, "WART1.png");
         System.out.println("Entered action one! WARTHOG");
         question.draw();
         while (!Game.inputReceived) {
@@ -37,7 +37,7 @@ public class Warthog extends NormalCard {
     @Override
     public void actionTwo() {
         super.actionTwo();
-        Picture question = new Picture(50, 50, "WARTHOG.jpg");
+        Picture question = new Picture(550, 275, "WART2.png");
         System.out.println("Entered action one! WARTHOG");
         question.draw();
         while (!Game.inputReceived) {
@@ -55,7 +55,7 @@ public class Warthog extends NormalCard {
     @Override
     public void actionThree() {
         super.actionThree();
-        Picture question = new Picture(50, 50, "WARTHOG.jpg");
+        Picture question = new Picture(550, 275, "WART3.png");
         System.out.println("Entered action one! WARTHOG");
         question.draw();
         while (!Game.inputReceived) {
@@ -73,7 +73,7 @@ public class Warthog extends NormalCard {
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(50, 50, "WARTHOG.jpg");
+        Picture question = new Picture(550, 275, "WART4.png");
         System.out.println("Entered action one! WARTHOG");
         question.draw();
         while (!Game.inputReceived) {
@@ -104,7 +104,7 @@ public class Warthog extends NormalCard {
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalPicture = new Picture(550, 85, "WARTHOG.jpg");
+        animalPicture = new Picture(670, 50, "WARTHOG.jpg");
         animalPicture.draw();
         actionRandomizer();
     }

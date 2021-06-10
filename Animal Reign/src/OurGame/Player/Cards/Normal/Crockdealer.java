@@ -18,7 +18,7 @@ public class Crockdealer extends NormalCard {
 
     @Override
     public void actionOne() {super.actionOne();
-        Picture question = new Picture(50, 50, "CROCKDEALER.jpg");
+        Picture question = new Picture(550, 275, "CROCK M1.png");
         System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
@@ -36,7 +36,7 @@ public class Crockdealer extends NormalCard {
     @Override
     public void actionTwo() {
         super.actionTwo();
-        Picture question = new Picture(50, 50, "CROCKDEALER.jpg");
+        Picture question = new Picture(550, 275, "CROCK M2.png");
         System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
@@ -54,7 +54,7 @@ public class Crockdealer extends NormalCard {
     @Override
     public void actionThree() {
         super.actionThree();
-        Picture question = new Picture(50, 50, "CROCKDEALER.jpg");
+        Picture question = new Picture(550, 275, "CROCK M3.png");
         System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
@@ -72,7 +72,7 @@ public class Crockdealer extends NormalCard {
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(50, 50, "CROCKDEALER.jpg");
+        Picture question = new Picture(550, 275, "CROCK M4.png");
         System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
@@ -102,7 +102,7 @@ public class Crockdealer extends NormalCard {
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalPicture = new Picture(550, 85, "CROCKDEALER.jpg");
+        animalPicture = new Picture(670, 50, "CROCKDEALER.jpg");
         animalPicture.draw();
         actionRandomizer();
 

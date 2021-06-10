@@ -19,7 +19,7 @@ public class Giraffe extends NormalCard{
     @Override
     public void actionOne() {
         super.actionOne();
-        Picture question = new Picture(50, 50, "GIRAFFE.jpg");
+        Picture question = new Picture(550, 275, "GIRAFFE M1.png");
         System.out.println("Entered action one! GIRAFFE");
         question.draw();
         while (!Game.inputReceived) {
@@ -37,7 +37,7 @@ public class Giraffe extends NormalCard{
     @Override
     public void actionTwo() {
         super.actionTwo();
-        Picture question = new Picture(50, 50, "GIRAFFE.jpg");
+        Picture question = new Picture(550, 275, "GIRAFFE M2.png");
         System.out.println("Entered action one! GIRAFFE");
         question.draw();
         while (!Game.inputReceived) {
@@ -55,7 +55,7 @@ public class Giraffe extends NormalCard{
     @Override
     public void actionThree() {
         super.actionThree();
-        Picture question = new Picture(50, 50, "GIRAFFE.jpg");
+        Picture question = new Picture(550, 275, "GIRAFFE M3.png");
         System.out.println("Entered action one! GIRAFFE");
         question.draw();
         while (!Game.inputReceived) {
@@ -73,7 +73,7 @@ public class Giraffe extends NormalCard{
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(50, 50, "GIRAFFE.jpg");
+        Picture question = new Picture(550, 275, "GIRAFFE M4.png");
         System.out.println("Entered action one! GIRAFFE");
         question.draw();
         while (!Game.inputReceived) {
@@ -104,7 +104,7 @@ public class Giraffe extends NormalCard{
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalPicture = new Picture(550, 85, "GIRAFFE.jpg");
+        animalPicture = new Picture(670, 50, "GIRAFFE.jpg");
         animalPicture.draw();
     }
 

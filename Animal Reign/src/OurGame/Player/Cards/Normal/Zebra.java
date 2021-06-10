@@ -20,7 +20,7 @@ public class Zebra extends NormalCard{
     @Override
     public void actionOne() {
         super.actionOne();
-        Picture question = new Picture(50, 50, "ZEBRA.jpg");
+        Picture question = new Picture(550, 275, "ZEBRA M1.png");
         System.out.println("Entered action one! ZEBRA");
         question.draw();
         while (!Game.inputReceived) {
@@ -39,7 +39,7 @@ public class Zebra extends NormalCard{
     @Override
     public void actionTwo() {
         super.actionTwo();
-        Picture question = new Picture(50, 50, "ZEBRA.jpg");
+        Picture question = new Picture(550, 275, "ZEBRA M2.png");
         System.out.println("Entered action one! ZEBRA");
         question.draw();
         while (!Game.inputReceived) {
@@ -58,7 +58,7 @@ public class Zebra extends NormalCard{
     @Override
     public void actionThree() {
         super.actionThree();
-        Picture question = new Picture(50, 50, "ZEBRA.jpg");
+        Picture question = new Picture(550, 275, "ZEBRA M3.png");
         System.out.println("Entered action one! ZEBRA");
         question.draw();
         while (!Game.inputReceived) {
@@ -77,7 +77,7 @@ public class Zebra extends NormalCard{
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(50, 50, "ZEBRA.jpg");
+        Picture question = new Picture(550, 275, "ZEBRA M4.png");
         System.out.println("Entered action one! ZEBRA");
         question.draw();
         while (!Game.inputReceived) {
@@ -109,7 +109,7 @@ public class Zebra extends NormalCard{
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalPicture = new Picture(550, 85, "ZEBRA.jpg");
+        animalPicture = new Picture(670, 50, "ZEBRA.jpg");
         animalPicture.draw();
         actionRandomizer();
     }
