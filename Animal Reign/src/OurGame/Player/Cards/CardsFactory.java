@@ -34,7 +34,7 @@ public class CardsFactory {
         }
 
         if (probability <= 64) {
-            return new CrockDealer();
+            return new Crockdealer();
         }
 
         if (probability <= 74) {

@@ -3,10 +3,13 @@ package OurGame.Player.Cards.Normal;
 import OurGame.Player.Game;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
-public class Tiger extends NormalCard {
+public class Crockdealer extends NormalCard {
 
-    public Tiger() {
-        super("Tiger");
+    public Crockdealer() {
+        super("Crockdealer");
+        animalPicture = new Picture(550, 85, "CROCKDEALER.jpg");
+        animalPicture.draw();
+
     }
 
     @Override
@@ -16,10 +19,9 @@ public class Tiger extends NormalCard {
 
 
     @Override
-    public void actionOne() {
-        super.actionOne();
-        Picture question = new Picture(50, 50, "TIGER.jpg");
-        System.out.println("Entered action one! TIGER");
+    public void actionOne() {super.actionOne();
+        Picture question = new Picture(50, 50, "CROCKDEALER.jpg");
+        System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
             System.out.println("Still in loop");
@@ -37,8 +39,8 @@ public class Tiger extends NormalCard {
     @Override
     public void actionTwo() {
         super.actionTwo();
-        Picture question = new Picture(50, 50, "TIGER.jpg");
-        System.out.println("Entered action one! TIGER");
+        Picture question = new Picture(50, 50, "CROCKDEALER.jpg");
+        System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
             System.out.println("Still in loop");
@@ -51,14 +53,13 @@ public class Tiger extends NormalCard {
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
-
     }
 
     @Override
     public void actionThree() {
         super.actionThree();
-        Picture question = new Picture(50, 50, "TIGER.jpg");
-        System.out.println("Entered action one! TIGER");
+        Picture question = new Picture(50, 50, "CROCKDEALER.jpg");
+        System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
             System.out.println("Still in loop");
@@ -76,8 +77,8 @@ public class Tiger extends NormalCard {
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(50, 50, "TIGER.jpg");
-        System.out.println("Entered action one! TIGER");
+        Picture question = new Picture(50, 50, "CROCKDEALER.jpg");
+        System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
             System.out.println("Still in loop");
@@ -95,25 +96,20 @@ public class Tiger extends NormalCard {
     @Override
     public void actionSelected() {
         super.actionSelected();
-        if (Game.isYes) {
-            System.out.println("Consequences happen");
-        } else {
-            System.out.println("Other consequences happen");
-        }
-
     }
+
 
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalPicture = new Picture(550, 85, "TIGER.jpg");
-        animalPicture.draw();
+        animalString = new Picture();
         actionRandomizer();
+
     }
 
     @Override
     public void actionRandomizer() {
-        int randomize = 1;
+        int randomize = (int) ((Math.random() * 4) + 1);
 
         switch (randomize) {
             case 1:
@@ -134,4 +130,5 @@ public class Tiger extends NormalCard {
 
     }
 }
+
 

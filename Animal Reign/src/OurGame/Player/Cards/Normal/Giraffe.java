@@ -1,5 +1,6 @@
 package OurGame.Player.Cards.Normal;
 
+import OurGame.Player.Game;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Giraffe extends NormalCard{
@@ -19,23 +20,78 @@ public class Giraffe extends NormalCard{
 
     @Override
     public void actionOne() {
-
+        super.actionOne();
+        Picture question = new Picture(50, 50, "GIRAFFE.jpg");
+        System.out.println("Entered action one! GIRAFFE");
+        question.draw();
+        while (!Game.inputReceived) {
+            System.out.println("Still in loop");
+            if (Game.inputReceived) {
+                System.out.println("Loop broken");
+                break;
+            }
+        }
+        actionSelected();
+        Game.inputReceived = false;
+        question.delete();
+        System.out.println("Action one executed");
     }
 
     @Override
     public void actionTwo() {
-
-
+        super.actionTwo();
+        Picture question = new Picture(50, 50, "GIRAFFE.jpg");
+        System.out.println("Entered action one! GIRAFFE");
+        question.draw();
+        while (!Game.inputReceived) {
+            System.out.println("Still in loop");
+            if (Game.inputReceived) {
+                System.out.println("Loop broken");
+                break;
+            }
+        }
+        actionSelected();
+        Game.inputReceived = false;
+        question.delete();
+        System.out.println("Action one executed");
     }
 
     @Override
     public void actionThree() {
-
+        super.actionThree();
+        Picture question = new Picture(50, 50, "GIRAFFE.jpg");
+        System.out.println("Entered action one! GIRAFFE");
+        question.draw();
+        while (!Game.inputReceived) {
+            System.out.println("Still in loop");
+            if (Game.inputReceived) {
+                System.out.println("Loop broken");
+                break;
+            }
+        }
+        actionSelected();
+        Game.inputReceived = false;
+        question.delete();
+        System.out.println("Action one executed");
     }
 
     @Override
     public void actionFour() {
-
+        super.actionFour();
+        Picture question = new Picture(50, 50, "GIRAFFE.jpg");
+        System.out.println("Entered action one! GIRAFFE");
+        question.draw();
+        while (!Game.inputReceived) {
+            System.out.println("Still in loop");
+            if (Game.inputReceived) {
+                System.out.println("Loop broken");
+                break;
+            }
+        }
+        actionSelected();
+        Game.inputReceived = false;
+        question.delete();
+        System.out.println("Action one executed");
     }
 
     @Override

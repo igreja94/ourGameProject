@@ -24,30 +24,74 @@ public class Monkey extends NormalCard {
         Picture question = new Picture(50, 50, "MONKEY.jpg");
         System.out.println("Entered action one! MONKEY");
         question.draw();
-        while (!Game.isInputReceived()) {
-            if (Game.isInputReceived()) {
+        while (!Game.inputReceived) {
+            System.out.println("Still in loop");
+            if (Game.inputReceived) {
+                System.out.println("Loop broken");
                 break;
             }
         }
         actionSelected();
-        Game.setInputReceived(false);
+        Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
     }
 
     @Override
     public void actionTwo() {
-
+        super.actionTwo();
+        Picture question = new Picture(50, 50, "MONKEY.jpg");
+        System.out.println("Entered action one! MONKEY");
+        question.draw();
+        while (!Game.inputReceived) {
+            System.out.println("Still in loop");
+            if (Game.inputReceived) {
+                System.out.println("Loop broken");
+                break;
+            }
+        }
+        actionSelected();
+        Game.inputReceived = false;
+        question.delete();
+        System.out.println("Action one executed");
     }
 
     @Override
     public void actionThree() {
-
+        super.actionThree();
+        Picture question = new Picture(50, 50, "MONKEY.jpg");
+        System.out.println("Entered action one! MONKEY");
+        question.draw();
+        while (!Game.inputReceived) {
+            System.out.println("Still in loop");
+            if (Game.inputReceived) {
+                System.out.println("Loop broken");
+                break;
+            }
+        }
+        actionSelected();
+        Game.inputReceived = false;
+        question.delete();
+        System.out.println("Action one executed");
     }
 
     @Override
     public void actionFour() {
-
+        super.actionFour();
+        Picture question = new Picture(50, 50, "MONKEY.jpg");
+        System.out.println("Entered action one! MONKEY");
+        question.draw();
+        while (!Game.inputReceived) {
+            System.out.println("Still in loop");
+            if (Game.inputReceived) {
+                System.out.println("Loop broken");
+                break;
+            }
+        }
+        actionSelected();
+        Game.inputReceived = false;
+        question.delete();
+        System.out.println("Action one executed");
     }
 
     @Override
