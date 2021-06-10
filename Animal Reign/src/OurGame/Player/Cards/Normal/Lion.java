@@ -7,8 +7,6 @@ public class Lion extends NormalCard{
 
     public Lion() {
         super("Lion");
-        animalPicture = new Picture(550, 85, "LION.jpg");
-        animalPicture.draw();
 
     }
 
@@ -25,13 +23,12 @@ public class Lion extends NormalCard{
         System.out.println("Entered action one! LION");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(5);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
@@ -44,13 +41,12 @@ public class Lion extends NormalCard{
         System.out.println("Entered action one! LION");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(10);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
@@ -63,13 +59,12 @@ public class Lion extends NormalCard{
         System.out.println("Entered action one! LION");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(15);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
@@ -82,28 +77,34 @@ public class Lion extends NormalCard{
         System.out.println("Entered action one! LION");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(20);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
     }
 
     @Override
-    public void actionSelected() {
-        super.actionSelected();
+    public void actionSelected(int influence) {
+        if (Game.isYes) {
+            System.out.println("Consequences happen");
+            Game.animalsInfluence = (Game.animalsInfluence + randomizeInfluence(influence));
+        } else {
+            System.out.println("Other consequences happen");
+            Game.animalsInfluence = (Game.animalsInfluence - randomizeInfluence(influence));
+        }
     }
 
 
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalString = new Picture();
+        animalPicture = new Picture(550, 85, "LION.jpg");
+        animalPicture.draw();
         actionRandomizer();
     }
 
@@ -129,4 +130,10 @@ public class Lion extends NormalCard{
         }
 
     }
+
+    public int randomizeInfluence(int influence){
+        int variation = 5;
+        return (int) (Math.random() * (((influence+variation) - (influence-variation)) + 1) + (influence-variation));
+    }
+
 }

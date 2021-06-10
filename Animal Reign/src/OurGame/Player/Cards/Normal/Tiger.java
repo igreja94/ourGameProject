@@ -18,17 +18,19 @@ public class Tiger extends NormalCard {
     @Override
     public void actionOne() {
         super.actionOne();
-        Picture question = new Picture(50, 50, "TIGER.jpg");
+        Picture question = new Picture(50, 50, "TIGER M1.jpg");
         System.out.println("Entered action one! TIGER");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        System.out.println("Loop broken");
+        actionSelected(5);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
@@ -37,75 +39,74 @@ public class Tiger extends NormalCard {
     @Override
     public void actionTwo() {
         super.actionTwo();
-        Picture question = new Picture(50, 50, "TIGER.jpg");
+        Picture question = new Picture(50, 50, "TIGER M2.jpg");
         System.out.println("Entered action one! TIGER");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
+            System.out.println();
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(10);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        System.out.println("Action two executed");
 
     }
 
     @Override
     public void actionThree() {
         super.actionThree();
-        Picture question = new Picture(50, 50, "TIGER.jpg");
+        Picture question = new Picture(50, 50, "TIGER M3.jpg");
         System.out.println("Entered action one! TIGER");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
+            System.out.println();
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(15);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        System.out.println("Action three executed");
     }
 
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(50, 50, "TIGER.jpg");
+        Picture question = new Picture(50, 50, "TIGER M5.jpg");
         System.out.println("Entered action one! TIGER");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
+            System.out.println();
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(20);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        System.out.println("Action four executed");
     }
 
     @Override
-    public void actionSelected() {
-        super.actionSelected();
+    public void actionSelected(int influence) {
         if (Game.isYes) {
             System.out.println("Consequences happen");
+            Game.animalsInfluence = (Game.animalsInfluence + randomizeInfluence(influence));
         } else {
             System.out.println("Other consequences happen");
+            Game.animalsInfluence = (Game.animalsInfluence - randomizeInfluence(influence));
         }
-
     }
 
     @Override
     public void cardSelected() {
-        super.cardSelected();
         animalPicture = new Picture(550, 85, "TIGER.jpg");
         animalPicture.draw();
         actionRandomizer();
@@ -113,7 +114,7 @@ public class Tiger extends NormalCard {
 
     @Override
     public void actionRandomizer() {
-        int randomize = 1;
+        int randomize = (int) ((Math.random() * 4) + 1);
 
         switch (randomize) {
             case 1:
@@ -132,6 +133,11 @@ public class Tiger extends NormalCard {
                 System.out.println("Something unexpected happened!");
         }
 
+    }
+
+    public int randomizeInfluence(int influence){
+        int variation = 5;
+        return (int) (Math.random() * (((influence+variation) - (influence-variation)) + 1) + (influence-variation));
     }
 }
 

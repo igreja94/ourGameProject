@@ -7,8 +7,6 @@ public class Giraffe extends NormalCard{
 
     public Giraffe() {
         super("Giraffe");
-        animalPicture = new Picture(550, 85, "GIRAFFE.jpg");
-        animalPicture.draw();
 
     }
 
@@ -25,13 +23,12 @@ public class Giraffe extends NormalCard{
         System.out.println("Entered action one! GIRAFFE");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(5);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
@@ -44,13 +41,12 @@ public class Giraffe extends NormalCard{
         System.out.println("Entered action one! GIRAFFE");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(10);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
@@ -63,13 +59,12 @@ public class Giraffe extends NormalCard{
         System.out.println("Entered action one! GIRAFFE");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(15);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
@@ -82,21 +77,26 @@ public class Giraffe extends NormalCard{
         System.out.println("Entered action one! GIRAFFE");
         question.draw();
         while (!Game.inputReceived) {
-            System.out.println("Still in loop");
             if (Game.inputReceived) {
                 System.out.println("Loop broken");
                 break;
             }
         }
-        actionSelected();
+        actionSelected(20);
         Game.inputReceived = false;
         question.delete();
         System.out.println("Action one executed");
     }
 
     @Override
-    public void actionSelected() {
-        super.actionSelected();
+    public void actionSelected(int influence) {
+        if (Game.isYes) {
+            System.out.println("Consequences happen");
+            Game.animalsInfluence = (Game.animalsInfluence + randomizeInfluence(influence));
+        } else {
+            System.out.println("Other consequences happen");
+            Game.animalsInfluence = (Game.animalsInfluence - randomizeInfluence(influence));
+        }
     }
 
 
@@ -104,8 +104,8 @@ public class Giraffe extends NormalCard{
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalString = new Picture();
-        actionRandomizer();
+        animalPicture = new Picture(550, 85, "GIRAFFE.jpg");
+        animalPicture.draw();
     }
 
     @Override
@@ -130,4 +130,10 @@ public class Giraffe extends NormalCard{
         }
 
     }
+
+    public int randomizeInfluence(int influence){
+        int variation = 5;
+        return (int) (Math.random() * (((influence+variation) - (influence-variation)) + 1) + (influence-variation));
+    }
+
 }

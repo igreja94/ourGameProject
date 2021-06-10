@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Game game = new Game();
         Player player = new Player();
-        game.gameStart(game.createDeck(2),player);
+        game.gameStart(game.createDeck(5),player);
 
     }
 

@@ -10,7 +10,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Game implements KeyboardHandler {
 
-    private int animalsInfluence = 50;
+    public static int animalsInfluence = 50;
     private Card[] deck;
     private Player player;
     private Picture background;
@@ -24,22 +24,6 @@ public class Game implements KeyboardHandler {
 
     public void setIsYes(boolean boo) {
         Game.isYes = boo;
-    }
-
-    public static boolean isInputReceived() {
-        return inputReceived;
-    }
-
-    public static void setInputReceived(boolean inputReceived) {
-        Game.inputReceived = inputReceived;
-    }
-
-    public int getAnimalsInfluence() {
-        return animalsInfluence;
-    }
-
-    public void setAnimalsInfluence(int animalsInfluence) {
-        this.animalsInfluence = animalsInfluence;
     }
 
 
@@ -62,8 +46,8 @@ public class Game implements KeyboardHandler {
     }
 
     public void gameStart(Card[] deck, Player player) {
-        while (player.getAge() < player.getMaxAge()) {
-            keyboardInit();
+        keyboardInit();
+        while (!(player.getIsDead()) && player.getAge() < player.getMaxAge()) {
             int randomize = (int) (Math.random() * deck.length);
             deck[randomize].cardSelected();
             iterationsCompleted++;
@@ -73,20 +57,35 @@ public class Game implements KeyboardHandler {
                 System.out.println("Iteration completed!");
             }
         }
+        if (Game.animalsInfluence < 0) {
+            //Game over screen from loss of influence
+            System.out.println("Killed");
+            player.killPlayer();
+        }
+        if (Game.animalsInfluence > 100) {
+            //Game over from excess influence
+            System.out.println("Killed");
+            player.killPlayer();
+        }
+        if (player.getAge() > player.getMaxAge()){
+            //Game over by natural causes
+            System.out.println("Killed by test of time");
+            player.killPlayer();
+        }
     }
 
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
         switch (keyboardEvent.getKey()) {
             case KeyboardEvent.KEY_RIGHT: //YES
+                Game.inputReceived = true;
                 System.out.println("Right key detected!");
                 isYes = true;
-                Game.inputReceived = true;
                 break;
             case KeyboardEvent.KEY_LEFT: //NO
+                Game.inputReceived = true;
                 System.out.println("Left key detected!");
                 isYes = false;
-                Game.inputReceived = true;
                 break;
             default:
                 //animalPicture.translate(30, 0);

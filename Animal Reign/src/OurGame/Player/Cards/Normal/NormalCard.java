@@ -2,6 +2,7 @@ package OurGame.Player.Cards.Normal;
 
 import OurGame.Player.Cards.Card;
 import OurGame.Player.Cards.Interfaces.NormalBehaviour;
+import OurGame.Player.Game;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
@@ -12,6 +13,7 @@ public class NormalCard extends Card implements NormalBehaviour {
     protected Rectangle cardRectangle;
     protected Picture animalPicture;
     protected Picture animalString;
+    protected int x;
 
 
 
@@ -55,8 +57,7 @@ public class NormalCard extends Card implements NormalBehaviour {
 
     }
 
-    public void actionSelected() {
-
+    public void actionSelected(int influence) {
     }
 
 }
