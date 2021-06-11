@@ -5,9 +5,9 @@ public class Player {
 
     //PROPERTIES
     private String name;
-    private int age = 18;
-    private final int maxAge = 20;
-    private boolean isDead;
+    public static int age = 18;
+    private final int maxAge = 50;
+    public static boolean isDead;
 
     //METHODS
     public String getName() {
@@ -34,7 +34,7 @@ public class Player {
        return isDead;
      }
 
-    public boolean killPlayer() {
+    public static boolean killPlayer() {
         return isDead = true;
     }
 

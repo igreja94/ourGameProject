@@ -23,7 +23,9 @@ public class Rhino extends NormalCard{
         System.out.println("Entered action one! RHINO");
         question.draw();
         while (!Game.inputReceived) {
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
@@ -31,6 +33,7 @@ public class Rhino extends NormalCard{
         actionSelected(5);
         Game.inputReceived = false;
         question.delete();
+        animalPicture.delete();
         System.out.println("Action one executed");
     }
 
@@ -38,10 +41,12 @@ public class Rhino extends NormalCard{
     public void actionTwo() {
         super.actionTwo();
         Picture question = new Picture(550, 275, "RHINO M2.png");
-        System.out.println("Entered action one! RHINO");
+        System.out.println("Entered action two! RHINO");
         question.draw();
         while (!Game.inputReceived) {
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
@@ -49,7 +54,8 @@ public class Rhino extends NormalCard{
         actionSelected(10);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        animalPicture.delete();
+        System.out.println("Action two executed");
     }
 
     @Override
@@ -59,7 +65,9 @@ public class Rhino extends NormalCard{
         System.out.println("Entered action one! RHINO");
         question.draw();
         while (!Game.inputReceived) {
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
@@ -67,17 +75,20 @@ public class Rhino extends NormalCard{
         actionSelected(15);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        animalPicture.delete();
+        System.out.println("Action three executed");
     }
 
     @Override
     public void actionFour() {
         super.actionFour();
-        Picture question = new Picture(550, 275, "RHINO M+4.png");
+        Picture question = new Picture(550, 275, "RHINO M4.png");
         System.out.println("Entered action one! RHINO");
         question.draw();
         while (!Game.inputReceived) {
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
@@ -85,17 +96,18 @@ public class Rhino extends NormalCard{
         actionSelected(20);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        animalPicture.delete();
+        System.out.println("Action four executed");
     }
 
     @Override
     public void actionSelected(int influence) {
         if (Game.isYes) {
             System.out.println("Consequences happen");
-            Game.animalsInfluence = (Game.animalsInfluence + randomizeInfluence(influence));
+            Game.animalReputation = (Game.animalReputation + randomizeInfluence(influence));
         } else {
             System.out.println("Other consequences happen");
-            Game.animalsInfluence = (Game.animalsInfluence - randomizeInfluence(influence));
+            Game.animalReputation = (Game.animalReputation - randomizeInfluence(influence));
         }
     }
 

@@ -1,6 +1,7 @@
 package OurGame.Player.Cards;
 
 import OurGame.Player.Cards.Normal.*;
+import OurGame.Player.Cards.Trap.Pedro;
 import OurGame.Player.Cards.Trap.TrapCard;
 
 public class CardsFactory {
@@ -33,15 +34,15 @@ public class CardsFactory {
             return new Bear();
         }
 
-        if (probability <= 64) {
+        if (probability <= 65) {
             return new Crockdealer();
         }
 
-        if (probability <= 74) {
+        if (probability <= 76) {
             return new Zebra();
         }
 
-        if (probability <= 85) {
+        if (probability <= 87) {
             return new Giraffe();
         }
 
@@ -49,7 +50,7 @@ public class CardsFactory {
     }
 
     public static Card tester(){
-        return new Tiger();
+        return new Pedro();
     }
 
 

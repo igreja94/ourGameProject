@@ -13,7 +13,6 @@ public class NormalCard extends Card implements NormalBehaviour {
     protected Rectangle cardRectangle;
     protected Picture animalPicture;
     protected Picture animalString;
-    protected int x;
 
 
 
@@ -21,8 +20,8 @@ public class NormalCard extends Card implements NormalBehaviour {
     public NormalCard(String name) {
         this.name = name;
         this.cardRectangle = cardRectangle;
-        Rectangle cardRectangle = new Rectangle(550, 70, 500, 700);
-        cardRectangle.draw();
+        //Rectangle cardRectangle = new Rectangle(550, 70, 500, 700);
+        //cardRectangle.fill();
     }
 
     ;
@@ -58,6 +57,7 @@ public class NormalCard extends Card implements NormalBehaviour {
     }
 
     public void actionSelected(int influence) {
+
     }
 
 }

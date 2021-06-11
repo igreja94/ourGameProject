@@ -2,21 +2,25 @@ package OurGame.Player.Cards.Trap;
 
 import OurGame.Player.Cards.Card;
 import OurGame.Player.Cards.Interfaces.TrapBehaviour;
+import OurGame.Player.Player;
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class TrapCard extends Card implements TrapBehaviour {
     //PROPERTIES
-    private String name;
-    private String message;
-
+    protected String name;
+    protected Rectangle cardRectangle;
+    protected Picture mcPicture;
+    protected Picture mcString;
 
     //METHODS
     public TrapCard(String name) {
         this.name = name;
+        this.cardRectangle = cardRectangle;
+        //Rectangle cardRectangle = new Rectangle(550, 70, 500, 700);
+        //cardRectangle.fill();
     };
 
-    public String getMessage() {
-        return message;
-    }
 
     @Override
     public String getName() {
@@ -34,6 +38,8 @@ public class TrapCard extends Card implements TrapBehaviour {
             return new Paulo();
     }
 
+
+
     @Override
     public void trapActionOne() {
 
@@ -43,5 +49,9 @@ public class TrapCard extends Card implements TrapBehaviour {
     public void trapActionTwo() {
 
     }
+
+    public void action(){
+
+    };
 
 }

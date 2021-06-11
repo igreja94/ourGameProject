@@ -10,7 +10,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Game implements KeyboardHandler {
 
-    public static int animalsInfluence = 50;
+    public static int animalReputation = 50;
     private Card[] deck;
     private Player player;
     private Picture background;
@@ -18,18 +18,10 @@ public class Game implements KeyboardHandler {
     public static boolean isYes;
     public static boolean inputReceived;
 
-    public static boolean getIsIsYes() {
-        return isYes;
-    }
-
-    public void setIsYes(boolean boo) {
-        Game.isYes = boo;
-    }
-
-
     public Game() {
         this.background = new Picture(10, 10, "BackgroundTwo.png");
         background.draw();
+        //implement reputation and age strings.
 
     }
 
@@ -37,9 +29,9 @@ public class Game implements KeyboardHandler {
 
     public Card[] createDeck(int deckSize) {
         deck = new Card[deckSize];
-
         for (int i = 0; i < deck.length; i++) {
-            deck[i] = CardsFactory.generateCard();
+            //deck[i] = CardsFactory.generateCard();
+            deck[i] = CardsFactory.tester();
             System.out.println(deck[i].getName());
         }
         return deck;
@@ -57,14 +49,14 @@ public class Game implements KeyboardHandler {
                 System.out.println("Iteration completed!");
             }
         }
-        if (Game.animalsInfluence < 0) {
+        if (Game.animalReputation < 0) {
             //Game over screen from loss of influence
-            System.out.println("Killed");
+            System.out.println("Killed by loss of influence");
             player.killPlayer();
         }
-        if (Game.animalsInfluence > 100) {
+        if (Game.animalReputation > 100) {
             //Game over from excess influence
-            System.out.println("Killed");
+            System.out.println("Killed by excess influence");
             player.killPlayer();
         }
         if (player.getAge() > player.getMaxAge()){

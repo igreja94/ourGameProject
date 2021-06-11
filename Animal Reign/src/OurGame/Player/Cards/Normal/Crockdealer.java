@@ -22,7 +22,9 @@ public class Crockdealer extends NormalCard {
         System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
@@ -30,7 +32,8 @@ public class Crockdealer extends NormalCard {
         actionSelected(5);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        animalPicture.delete();
+        System.out.println("Action two executed");
     }
 
     @Override
@@ -40,7 +43,9 @@ public class Crockdealer extends NormalCard {
         System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
@@ -48,7 +53,8 @@ public class Crockdealer extends NormalCard {
         actionSelected(10);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        animalPicture.delete();
+        System.out.println("Action two executed");
     }
 
     @Override
@@ -58,7 +64,9 @@ public class Crockdealer extends NormalCard {
         System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
@@ -66,7 +74,8 @@ public class Crockdealer extends NormalCard {
         actionSelected(15);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        animalPicture.delete();
+        System.out.println("Action three executed");
     }
 
     @Override
@@ -76,7 +85,9 @@ public class Crockdealer extends NormalCard {
         System.out.println("Entered action one! CROCODILE");
         question.draw();
         while (!Game.inputReceived) {
+            System.out.println();
             if (Game.inputReceived) {
+                System.out.println(Game.inputReceived);
                 System.out.println("Loop broken");
                 break;
             }
@@ -84,17 +95,18 @@ public class Crockdealer extends NormalCard {
         actionSelected(20);
         Game.inputReceived = false;
         question.delete();
-        System.out.println("Action one executed");
+        animalPicture.delete();
+        System.out.println("Action four executed");
     }
 
     @Override
     public void actionSelected(int influence) {
         if (Game.isYes) {
             System.out.println("Consequences happen");
-            Game.animalsInfluence = (Game.animalsInfluence + randomizeInfluence(influence));
+            Game.animalReputation = (Game.animalReputation + randomizeInfluence(influence));
         } else {
             System.out.println("Other consequences happen");
-            Game.animalsInfluence = (Game.animalsInfluence - randomizeInfluence(influence));
+            Game.animalReputation = (Game.animalReputation - randomizeInfluence(influence));
         }
     }
 
@@ -102,7 +114,7 @@ public class Crockdealer extends NormalCard {
     @Override
     public void cardSelected() {
         super.cardSelected();
-        animalPicture = new Picture(670, 50, "CROCKDEALER.jpg");
+        animalPicture = new Picture(670, 50, "CROC DEALER.jpg");
         animalPicture.draw();
         actionRandomizer();
 
