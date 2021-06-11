@@ -30,8 +30,8 @@ public class Game implements KeyboardHandler {
     public Card[] createDeck(int deckSize) {
         deck = new Card[deckSize];
         for (int i = 0; i < deck.length; i++) {
-            //deck[i] = CardsFactory.generateCard();
-            deck[i] = CardsFactory.tester();
+            deck[i] = CardsFactory.generateCard();
+            //deck[i] = CardsFactory.tester();
             System.out.println(deck[i].getName());
         }
         return deck;
