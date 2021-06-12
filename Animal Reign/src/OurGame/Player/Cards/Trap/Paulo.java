@@ -12,7 +12,7 @@ public class Paulo extends TrapCard{
     @Override
     public void trapActionOne() {
         super.trapActionOne();
-        mcString = new Picture(550 , 275, "MC PAULO.png");
+        mcString = new Picture(550 , 275, "PAULO M1.png");
         mcString.draw();
         Game.animalReputation = (Game.animalReputation + 50);
         while (!Game.inputReceived) {
@@ -26,13 +26,13 @@ public class Paulo extends TrapCard{
         Game.inputReceived = false;
         mcString.delete();
         mcPicture.delete();
-        System.out.println("Sara Action 1 executed");
+        System.out.println("Paulo Action 1 executed");
     }
 
     @Override
     public void trapActionTwo() {
         super.trapActionOne();
-        mcString = new Picture(550 , 275, "MC PAULO.png");
+        mcString = new Picture(550 , 275, "PAULO M1.png");
         mcString.draw();
         Game.animalReputation = (Game.animalReputation - 50);
         while (!Game.inputReceived) {
@@ -51,7 +51,7 @@ public class Paulo extends TrapCard{
 
     @Override
     public void cardSelected() {
-        mcPicture = new Picture(670, 50, "PAULO.png");
+        mcPicture = new Picture(670, 50, "MC PAULO.png");
         mcPicture.draw();
         actionRandomizer();
     }

@@ -13,13 +13,13 @@ public class Pedro extends TrapCard{
     @Override
     public void trapActionOne() {
         super.trapActionOne();
-        mcString = new Picture(550 , 275, "MC PEDRO.png");
+        mcString = new Picture(550 , 275, "PEDRO M1.png");
         mcString.draw();
-        Player.killPlayer();
         while (!Game.inputReceived) {
             System.out.println();
             if (Game.inputReceived) {
                 System.out.println(Game.inputReceived);
+                Game.animalReputation = (Game.animalReputation + 100);
                 System.out.println("Loop broken");
                 break;
             }
@@ -33,7 +33,7 @@ public class Pedro extends TrapCard{
     @Override
     public void trapActionTwo() {
         super.trapActionOne();
-        mcString = new Picture(550 , 275, "MC PEDRO.png");
+        mcString = new Picture(550 , 275, "PEDRO M1.png");
         mcString.draw();
         ageRandomizer();
         if (Player.age < 18){

@@ -13,7 +13,7 @@ public class Sara extends TrapCard{
     @Override
     public void trapActionOne() {
         super.trapActionOne();
-        mcString = new Picture(550 , 275, "MC SARA.png");
+        mcString = new Picture(550 , 275, "SARA M1.png");
         mcString.draw();
         Player.age = (Player.age + 10);
         Game.animalReputation = (Game.animalReputation + 30);
@@ -34,7 +34,7 @@ public class Sara extends TrapCard{
     @Override
     public void trapActionTwo() {
         super.trapActionOne();
-        mcString = new Picture(550 , 275, "MC SARA.png");
+        mcString = new Picture(550 , 275, "SARA M1.png");
         mcString.draw();
         Player.age = (Player.age - 10);
         if (Player.age < 18){
@@ -57,7 +57,7 @@ public class Sara extends TrapCard{
 
     @Override
     public void cardSelected() {
-        mcPicture = new Picture(670,50,"SARA.png");
+        mcPicture = new Picture(670,50,"MC SARA.png");
         mcPicture.draw();
         actionRandomizer();
     }
