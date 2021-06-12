@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6479b885-2023-40b7-88c2-293500241be6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Animal Reign/resources/jungle.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Animal Reign/resources/lom.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Animal Reign/resources/puddipuddimusic.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Animal Reign/resources/vic.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Sound/Sound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Crockdealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Crockdealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Giraffe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Giraffe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Lion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Monkey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Rhino.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Rhino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Tiger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Warthog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Warthog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Zebra.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Zebra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/BackgroundTwo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Player.class" afterDir="false" />
-    </list>
+    <list default="true" id="6479b885-2023-40b7-88c2-293500241be6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Animal Reign/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,20 +62,22 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OurGame.Player.Main" />
+      <module name="ourGameProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OurGame.Player.Main" />
-      <module name="ourGameProject" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,6 +104,7 @@
       <workItem from="1623340683532" duration="8296000" />
       <workItem from="1623437167360" duration="8905000" />
       <workItem from="1623508158311" duration="1100000" />
+      <workItem from="1623527658802" duration="808000" />
     </task>
     <task id="LOCAL-00001" summary="added images">
       <created>1623346409368</created>

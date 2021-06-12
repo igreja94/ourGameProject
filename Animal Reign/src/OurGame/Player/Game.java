@@ -16,8 +16,10 @@ public class Game implements KeyboardHandler {
     public static int animalReputation = 50;
     private Card[] deck;
     private Player player;
-    private Picture background;
-    private Picture titleMenu;
+    private Picture background;  //3
+    private Picture storyMenu;  //2
+    private Picture titleMenu;  //1
+
     private Sound music;
     private Sound gameOver;
     private Sound victory;
@@ -49,89 +51,103 @@ public class Game implements KeyboardHandler {
     }
 
     public void gameStart(Card[] deck, Player player) {
-
         while (!Game.inputReceived) {
             System.out.println();
 
             if (Game.inputReceived) {
                 titleMenu.delete();
-                this.background = new Picture(10, 10, "backgroundFinal.png");
-                background.draw();
-                Text reputationScreen = new Text(163, 190, "Repute:" + animalReputation);
-                Text ageScreen = new Text(150, 110, "Age:" + player.getAge());
-                ageScreen.grow(80, 25);
-                ageScreen.setColor(Color.DARK_GRAY);
-                reputationScreen.grow(95, 30);
-                reputationScreen.setColor(Color.DARK_GRAY);
-                reputationScreen.draw();
-                ageScreen.draw();
-                Game.inputReceived = false;
+                this.storyMenu = new Picture(10, 10, "intro.png");
+                storyMenu.draw();
+                inputReceived = false;
 
+                while (!Game.inputReceived) {
+                    System.out.println();
 
-                while (!(player.getIsDead())) {
-                    int randomize = (int) (Math.random() * deck.length);
-                    deck[randomize].cardSelected();
-                    reputationScreen.setText("Repute:" + animalReputation);
-                    reputationScreen.draw();
+                    if (Game.inputReceived) {
 
-                    if (Game.animalReputation <= 0) {
-                        ageScreen.delete();
-                        reputationScreen.delete();
-
-                        //Game over screen from loss of influence
-                        System.out.println("Killed by loss of influence");
-                        this.background = new Picture(10, 10, "FINAL.png");
-                        music.stop();
-                        gameOver.play(true);
+                        storyMenu.delete();
+                        this.background = new Picture(10,10, "backgroundFinal.png");
                         background.draw();
-                        Player.killPlayer();
-                        Game.inputReceived = true;
 
-                    }
+                        Text reputationScreen = new Text(163, 190, "Repute:" + animalReputation);
+                        Text ageScreen = new Text(150, 110, "Age:" + player.getAge());
 
-                    if (Game.animalReputation >= 100) {
-                        //Game over from excess influence
-                        ageScreen.delete();
-                        reputationScreen.delete();
-
-                        System.out.println("Killed by excess influence");
-                        this.background = new Picture(10, 10, "FINAL.png");
-                        music.stop();
-                        gameOver.play(true);
-                        background.draw();
-                        Player.killPlayer();
-                        Game.inputReceived = true;
-                    }
-
-                    if (Player.age >= Player.maxAge) {
-                        //Game over by natural causes
-                        ageScreen.delete();
-                        reputationScreen.delete();
-
-                        System.out.println("Killed by test of time");
-                        this.background = new Picture(10, 10, "FINAL.png");
-                        music.stop();
-                        victory.play(true);
-                        victory.setLoop(2);
-                        background.draw();
-                        Player.killPlayer();
-                        Game.inputReceived = true;
-                    }
-
-                    iterationsCompleted++;
-                    if (iterationsCompleted == 2) {
-                        player.setAge((player.getAge() + 1));
-                        iterationsCompleted = 0;
-                        ageScreen.delete();
-                        ageScreen.setText("Age:" + player.getAge());
+                        ageScreen.grow(80, 25);
+                        ageScreen.setColor(Color.DARK_GRAY);
+                        reputationScreen.grow(95, 30);
+                        reputationScreen.setColor(Color.DARK_GRAY);
+                        reputationScreen.draw();
                         ageScreen.draw();
+                        Game.inputReceived = false;
+
+
+                        while (!(player.getIsDead())) {
+                            int randomize = (int) (Math.random() * deck.length);
+                            deck[randomize].cardSelected();
+                            reputationScreen.setText("Repute:" + animalReputation);
+                            reputationScreen.draw();
+
+                            if (Game.animalReputation <= 0) {
+                                ageScreen.delete();
+                                reputationScreen.delete();
+
+                                //Game over screen from loss of influence
+                                System.out.println("Killed by loss of influence");
+                                this.background = new Picture(10, 10, "FINAL.png");
+                                music.stop();
+                                gameOver.play(true);
+                                background.draw();
+                                Player.killPlayer();
+                                Game.inputReceived = true;
+
+                            }
+
+                            if (Game.animalReputation >= 100) {
+                                //Game over from excess influence
+                                ageScreen.delete();
+                                reputationScreen.delete();
+
+                                System.out.println("Killed by excess influence");
+                                this.background = new Picture(10, 10, "FINAL.png");
+                                music.stop();
+                                gameOver.play(true);
+                                background.draw();
+                                Player.killPlayer();
+                                Game.inputReceived = true;
+                            }
+
+                            if (Player.age >= Player.maxAge) {
+                                //Game over by natural causes
+                                ageScreen.delete();
+                                reputationScreen.delete();
+
+                                System.out.println("Killed by test of time");
+                                this.background = new Picture(10, 10, "happyEnd.png");
+                                music.stop();
+                                victory.play(true);
+                                victory.setLoop(2);
+                                background.draw();
+                                Player.killPlayer();
+                                Game.inputReceived = true;
+                            }
+
+                            iterationsCompleted++;
+                            if (iterationsCompleted == 2) {
+                                player.setAge((player.getAge() + 1));
+                                iterationsCompleted = 0;
+                                ageScreen.delete();
+                                ageScreen.setText("Age:" + player.getAge());
+                                ageScreen.draw();
+                            }
+                        }
+                        ageScreen.delete();
+                        reputationScreen.delete();
                     }
                 }
-                ageScreen.delete();
-                reputationScreen.delete();
             }
         }
     }
+
 
         /*if (Game.animalReputation < 0) {
             //Game over screen from loss of influence
