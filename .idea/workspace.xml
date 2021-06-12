@@ -1,123 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6479b885-2023-40b7-88c2-293500241be6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/BEAR M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/BEAR M2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/BEAR M3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/BEAR M4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/BEAR.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/BEAR.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/CROC DEALER.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/CROCK M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/CROCK M2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/CROCK M3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/CROCK M4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/CROCKDEALER.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/FINAL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/GIRAFFE M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/GIRAFFE M2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/GIRAFFE M3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/GIRAFFE M4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/GIRAFFE.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/GameIntroTest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/LION M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/LION M2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/LION M3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/LION M4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/LION.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/MC PAULO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/MC PEDRO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/MC SARA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/MONKEY M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/MONKEY M2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/MONKEY M3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/MONKEY M4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/MONKEY.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OPEN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Card.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/CardsFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Interfaces/NormalBehaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Interfaces/TrapBehaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Bear.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Crockdealer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Giraffe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Lion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Monkey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/NormalCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Rhino.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Tiger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Warthog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Normal/Zebra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Trap/Paulo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Trap/Pedro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Trap/Sara.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Cards/Trap/TrapCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/OurGame/Player/Sound/Sound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/PAULO M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/PAULO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/PEDRO M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/PEDRO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/RHINO M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/RHINO M2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/RHINO M3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/RHINO M4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/RHINO.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/SARA M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/SARA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/TIGER M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/TIGER M2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/TIGER M4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/TIGER M5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/TIGER.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/WART1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/WART2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/WART3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/WART4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/WARTHOG.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/ZEBRA M1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/ZEBRA M2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/ZEBRA M3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/ZEBRA M4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/ZEBRA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/backgroundFinal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/happyEnd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/intro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/jungle.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/lom.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/puddipuddimusic.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/out/production/Animal Reign/vic.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Crockdealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Crockdealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Giraffe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Giraffe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Lion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Monkey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Rhino.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Rhino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Tiger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Warthog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Warthog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Zebra.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Cards/Normal/Zebra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Animal Reign/src/OurGame/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/CardsFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/CardsFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Bear.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Bear.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Crockdealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Crockdealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Giraffe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Giraffe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Lion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Lion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Monkey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Monkey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Rhino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Rhino.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Tiger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Tiger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Warthog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Warthog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Zebra.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Normal/Zebra.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Trap/Pedro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Cards/Trap/Pedro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/OurGame/Player/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/PAULO M1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/PAULO M1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/PEDRO M1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/PEDRO M1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ourGameProject/SARA M1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ourGameProject/SARA M1.png" afterDir="false" />
-    </list>
+    <list default="true" id="6479b885-2023-40b7-88c2-293500241be6" name="Default Changelist" comment="final release of pixel survivor" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -229,7 +113,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623346409368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="final release of pixel survivor">
+      <created>1623532749466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623532749466</updated>
+    </task>
+    <task id="LOCAL-00003" summary="final release of pixel survivor">
+      <created>1623532935345</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623532935345</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +147,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added images" />
-    <option name="LAST_COMMIT_MESSAGE" value="added images" />
+    <MESSAGE value="final release of pixel survivor" />
+    <option name="LAST_COMMIT_MESSAGE" value="final release of pixel survivor" />
   </component>
 </project>
