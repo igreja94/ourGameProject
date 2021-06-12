@@ -30,7 +30,7 @@ public class Rhino extends NormalCard{
                 break;
             }
         }
-        actionSelected(5);
+        actionSelected(3);
         Game.inputReceived = false;
         question.delete();
         animalPicture.delete();
@@ -51,7 +51,7 @@ public class Rhino extends NormalCard{
                 break;
             }
         }
-        actionSelected(10);
+        actionSelected(6);
         Game.inputReceived = false;
         question.delete();
         animalPicture.delete();
@@ -72,7 +72,7 @@ public class Rhino extends NormalCard{
                 break;
             }
         }
-        actionSelected(15);
+        actionSelected(9);
         Game.inputReceived = false;
         question.delete();
         animalPicture.delete();
@@ -93,7 +93,7 @@ public class Rhino extends NormalCard{
                 break;
             }
         }
-        actionSelected(20);
+        actionSelected(12);
         Game.inputReceived = false;
         question.delete();
         animalPicture.delete();
@@ -145,7 +145,7 @@ public class Rhino extends NormalCard{
     }
 
     public int randomizeInfluence(int influence){
-        int variation = 5;
+        int variation = 3;
         return (int) (Math.random() * (((influence+variation) - (influence-variation)) + 1) + (influence-variation));
     }
 }

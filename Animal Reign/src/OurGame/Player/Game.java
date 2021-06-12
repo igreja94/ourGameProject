@@ -2,6 +2,7 @@ package OurGame.Player;
 
 import OurGame.Player.Cards.Card;
 import OurGame.Player.Cards.CardsFactory;
+import OurGame.Player.Sound.Sound;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Text;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
@@ -17,7 +18,9 @@ public class Game implements KeyboardHandler {
     private Player player;
     private Picture background;
     private Picture titleMenu;
-
+    private Sound music;
+    private Sound gameOver;
+    private Sound victory;
     private int iterationsCompleted;
     public static boolean isYes;
     public static boolean inputReceived;
@@ -27,6 +30,11 @@ public class Game implements KeyboardHandler {
     public Game() {
         this.titleMenu = new Picture(10, 10, "OPEN.png");
         titleMenu.draw();
+        music = new Sound("/jungle.wav");
+        gameOver = new Sound("/lom.wav");
+        victory = new Sound("/vic.wav");
+        music.play(true);
+        music.setLoop(5);
         keyboardInit();
     }
 
@@ -57,12 +65,12 @@ public class Game implements KeyboardHandler {
                 reputationScreen.setColor(Color.DARK_GRAY);
                 reputationScreen.draw();
                 ageScreen.draw();
+                Game.inputReceived = false;
 
 
-                while (!(player.getIsDead()) && player.getAge() < player.getMaxAge()) {
+                while (!(player.getIsDead())) {
                     int randomize = (int) (Math.random() * deck.length);
                     deck[randomize].cardSelected();
-
                     reputationScreen.setText("Repute:" + animalReputation);
                     reputationScreen.draw();
 
@@ -73,8 +81,12 @@ public class Game implements KeyboardHandler {
                         //Game over screen from loss of influence
                         System.out.println("Killed by loss of influence");
                         this.background = new Picture(10, 10, "FINAL.png");
+                        music.stop();
+                        gameOver.play(true);
                         background.draw();
                         Player.killPlayer();
+                        Game.inputReceived = true;
+
                     }
 
                     if (Game.animalReputation >= 100) {
@@ -84,19 +96,26 @@ public class Game implements KeyboardHandler {
 
                         System.out.println("Killed by excess influence");
                         this.background = new Picture(10, 10, "FINAL.png");
+                        music.stop();
+                        gameOver.play(true);
                         background.draw();
                         Player.killPlayer();
+                        Game.inputReceived = true;
                     }
 
-                    if (player.getAge() > player.getMaxAge()) {
+                    if (Player.age >= Player.maxAge) {
                         //Game over by natural causes
                         ageScreen.delete();
                         reputationScreen.delete();
 
                         System.out.println("Killed by test of time");
                         this.background = new Picture(10, 10, "FINAL.png");
+                        music.stop();
+                        victory.play(true);
+                        victory.setLoop(2);
                         background.draw();
                         Player.killPlayer();
+                        Game.inputReceived = true;
                     }
 
                     iterationsCompleted++;
