@@ -6,7 +6,7 @@ public class Player {
     //PROPERTIES
     private String name;
     public static int age = 18;
-    public static final int maxAge = 50;
+    public static final int maxAge = 20;
     public static boolean isDead;
 
     //METHODS

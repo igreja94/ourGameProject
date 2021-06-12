@@ -101,7 +101,21 @@ public class Bear extends NormalCard{
     }
 
     @Override
-    public void actionSelected(int influence) {
+    public void actionSelected(int influence) { //25% per cent chance of flipping the changes
+        int randomizer = (int) ((Math.random()*100)+1);
+
+        if (randomizer < 20) {
+            if (Game.isYes) {
+                System.out.println("Consequences happen");
+                Game.animalReputation = (Game.animalReputation - randomizeInfluence(influence));
+
+            } else {
+                System.out.println("Other consequences happen");
+                Game.animalReputation = (Game.animalReputation + randomizeInfluence(influence));
+            }
+            return;
+        }
+
         if (Game.isYes) {
             System.out.println("Consequences happen");
             Game.animalReputation = (Game.animalReputation + randomizeInfluence(influence));

@@ -125,7 +125,7 @@ public class Game implements KeyboardHandler {
                                 this.background = new Picture(10, 10, "happyEnd.png");
                                 music.stop();
                                 victory.play(true);
-                                victory.setLoop(2);
+                                victory.setLoop(5);
                                 background.draw();
                                 Player.killPlayer();
                                 Game.inputReceived = true;
